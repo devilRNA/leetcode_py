@@ -17,7 +17,7 @@ class Solution(object):
                 left = self.diffWaysToCompute(expression[:i])
                 right  = self.diffWaysToCompute(expression[i+1:])
 
-                # combine
+                # combine & calculate
                 for l in left:
                     for r in right:
                         if char == '+':
